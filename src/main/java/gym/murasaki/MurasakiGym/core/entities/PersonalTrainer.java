@@ -5,7 +5,7 @@ import gym.murasaki.MurasakiGym.core.enums.UserTypes;
 import java.util.Date;
 import java.util.List;
 
-public record PersonalTrainers(
+public record PersonalTrainer(
         Long id,
         String name,
         String email,

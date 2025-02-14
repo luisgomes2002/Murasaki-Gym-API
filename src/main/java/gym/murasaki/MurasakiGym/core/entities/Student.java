@@ -13,6 +13,6 @@ public record Student(
         UserTypes type,
         Date created_at,
         int age,
-        List<PersonalTrainers> personalTrainers,
+        List<PersonalTrainer> personalTrainers,
         List<TrainingPlan> trainingPlans
 ) {}

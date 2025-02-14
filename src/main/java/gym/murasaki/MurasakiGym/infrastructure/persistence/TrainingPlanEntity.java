@@ -15,7 +15,7 @@ public class TrainingPlanEntity {
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "personal_trainer_id")  // Foreing Key
-    private PersonalTrainersEntity personalTrainer;
+    private PersonalTrainerEntity personalTrainer;
 
     @JsonIgnore
     @ManyToMany
@@ -38,7 +38,7 @@ public class TrainingPlanEntity {
     public TrainingPlanEntity() {
     }
 
-    public TrainingPlanEntity(PersonalTrainersEntity personalTrainer, List<StudentEntity> students, String goals, int timesCompleted, int maxTimeCompleted, List<ExerciseEntity> exercises, String note) {
+    public TrainingPlanEntity(PersonalTrainerEntity personalTrainer, List<StudentEntity> students, String goals, int timesCompleted, int maxTimeCompleted, List<ExerciseEntity> exercises, String note) {
         this.personalTrainer = personalTrainer;
         this.students = students;
         this.goals = goals;
@@ -56,11 +56,11 @@ public class TrainingPlanEntity {
         this.id = id;
     }
 
-    public PersonalTrainersEntity getPersonalTrainer() {
+    public PersonalTrainerEntity getPersonalTrainer() {
         return personalTrainer;
     }
 
-    public void setPersonalTrainer(PersonalTrainersEntity personalTrainer) {
+    public void setPersonalTrainer(PersonalTrainerEntity personalTrainer) {
         this.personalTrainer = personalTrainer;
     }
 

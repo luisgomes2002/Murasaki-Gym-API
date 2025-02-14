@@ -12,7 +12,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Personal_trainers")
-public class PersonalTrainersEntity extends Users{
+public class PersonalTrainerEntity extends Users{
     @JsonIgnore
     @ManyToMany(mappedBy = "personalTrainers")
     private List<StudentEntity> students;
@@ -22,11 +22,11 @@ public class PersonalTrainersEntity extends Users{
 
     private String note;
 
-    public PersonalTrainersEntity() {
+    public PersonalTrainerEntity() {
         super();
     }
 
-    public PersonalTrainersEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<StudentEntity> students, List<TrainingPlanEntity> trainingPlans, String note) {
+    public PersonalTrainerEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<StudentEntity> students, List<TrainingPlanEntity> trainingPlans, String note) {
         super(name, email, password, type, created_at, age);
         this.students = students;
         this.trainingPlans = trainingPlans;

@@ -18,7 +18,7 @@ public class StudentEntity extends Users{
             joinColumns = @JoinColumn(name = "student_id"), // Foreing Key
             inverseJoinColumns = @JoinColumn(name = "personal_trainer_id")
     )
-    private List<PersonalTrainersEntity> personalTrainers;
+    private List<PersonalTrainerEntity> personalTrainers;
 
     @JsonIgnore
     @ManyToMany(mappedBy = "students")
@@ -28,17 +28,17 @@ public class StudentEntity extends Users{
         super();
     }
 
-    public StudentEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<PersonalTrainersEntity> personalTrainers, List<TrainingPlanEntity> trainingPlans) {
+    public StudentEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<PersonalTrainerEntity> personalTrainers, List<TrainingPlanEntity> trainingPlans) {
         super(name, email, password, type, created_at, age);
         this.personalTrainers = personalTrainers;
         this.trainingPlans = trainingPlans;
     }
 
-    public List<PersonalTrainersEntity> getPersonalTrainers() {
+    public List<PersonalTrainerEntity> getPersonalTrainers() {
         return personalTrainers;
     }
 
-    public void setPersonalTrainers(List<PersonalTrainersEntity> personalTrainers) {
+    public void setPersonalTrainers(List<PersonalTrainerEntity> personalTrainers) {
         this.personalTrainers = personalTrainers;
     }
 

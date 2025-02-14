@@ -1,14 +1,11 @@
 package gym.murasaki.MurasakiGym.core.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
-
 import java.util.Date;
 import java.util.List;
 
 public record TrainingPlan(
         Long id,
-        PersonalTrainers personalTrainer,
+        PersonalTrainer personalTrainer,
         List<Student> students,
         Date today,
         String goals,
