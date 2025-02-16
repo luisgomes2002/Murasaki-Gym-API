@@ -1,6 +1,6 @@
 # Murasaki Gym
 
-Murasaki Gym é uma aplicação desenvolvida para personal trainers e seus alunos, seguindo os princípios da Clean Architecture. A aplicação permitindo que os personal trainers prescrevam treinos personalizados para seus alunos e os ajustem conforme necessário. Além disso, os alunos podem registrar suas informações corporais, como peso, percentual de gordura e outras métricas, para acompanhar sua evolução ao longo do tempo.
+Murasaki Gym is an application developed for personal trainers and their clients, following the principles of Clean Architecture. The application allows personal trainers to prescribe customized workouts for their clients and adjust them as needed. Additionally, clients can log their body metrics, such as weight, body fat percentage, and other measurements, to track their progress over time.
 
 ---
 
