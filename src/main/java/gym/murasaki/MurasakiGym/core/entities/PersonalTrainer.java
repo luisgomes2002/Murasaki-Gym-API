@@ -12,6 +12,7 @@ public record PersonalTrainer(
         String password,
         UserTypes type,
         Date created_at,
+        Date updated_at,
         int age,
         List<Student> students,
         List<TrainingPlan> trainingPlans,

@@ -7,7 +7,6 @@ public record TrainingPlan(
         Long id,
         PersonalTrainer personalTrainer,
         List<Student> students,
-        Date today,
         String goals,
         int timesCompleted,
         int maxTimeCompleted,

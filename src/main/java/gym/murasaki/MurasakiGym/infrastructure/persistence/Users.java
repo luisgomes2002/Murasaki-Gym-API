@@ -7,8 +7,8 @@ import java.util.Date;
 
 @MappedSuperclass
 public abstract class Users {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
@@ -21,6 +21,7 @@ public abstract class Users {
     private UserTypes type;
 
     private Date created_at;
+    private Date updated_at;
 
     @Column(nullable = true)
     private int age;
@@ -28,12 +29,13 @@ public abstract class Users {
     public Users() {
     }
 
-    public Users(String name, String email, String password, UserTypes type, Date created_at, int age) {
+    public Users(String name, String email, String password, UserTypes type, Date created_at, Date updated_at, int age) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.type = type;
         this.created_at = created_at;
+        this.updated_at = updated_at;
         this.age = age;
     }
 
@@ -83,6 +85,14 @@ public abstract class Users {
 
     public void setCreated_at(Date created_at) {
         this.created_at = created_at;
+    }
+
+    public Date getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(Date updated_at) {
+        this.updated_at = updated_at;
     }
 
     public int getAge() {

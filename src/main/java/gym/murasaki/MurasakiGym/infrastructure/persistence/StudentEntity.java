@@ -28,8 +28,8 @@ public class StudentEntity extends Users{
         super();
     }
 
-    public StudentEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<PersonalTrainerEntity> personalTrainers, List<TrainingPlanEntity> trainingPlans) {
-        super(name, email, password, type, created_at, age);
+    public StudentEntity(String name, String email, String password, UserTypes type, Date created_at, Date updated_at, int age, List<PersonalTrainerEntity> personalTrainers, List<TrainingPlanEntity> trainingPlans) {
+        super(name, email, password, type, created_at, updated_at, age);
         this.personalTrainers = personalTrainers;
         this.trainingPlans = trainingPlans;
     }

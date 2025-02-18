@@ -26,8 +26,8 @@ public class PersonalTrainerEntity extends Users{
         super();
     }
 
-    public PersonalTrainerEntity(String name, String email, String password, UserTypes type, Date created_at, int age, List<StudentEntity> students, List<TrainingPlanEntity> trainingPlans, String note) {
-        super(name, email, password, type, created_at, age);
+    public PersonalTrainerEntity(String name, String email, String password, UserTypes type, Date created_at, Date updated_at, int age, List<StudentEntity> students, List<TrainingPlanEntity> trainingPlans, String note) {
+        super(name, email, password, type, created_at, updated_at, age);
         this.students = students;
         this.trainingPlans = trainingPlans;
         this.note = note;
