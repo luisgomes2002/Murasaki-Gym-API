@@ -55,7 +55,7 @@ src
 
 ## Prerequisites
 Ensure you have the following installed:
-- [Java 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
+- [Java 23](https://www.oracle.com/java/technologies/downloads/#java23)
 - [Docker](https://www.docker.com/)
 - [Maven](https://maven.apache.org/)
 
